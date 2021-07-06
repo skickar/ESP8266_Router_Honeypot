@@ -1,5 +1,5 @@
 # ESP8266_Router_Honeypot
-A NAT router with an FTP honeypot using a canarytoken by @spacehuhn and @kodykinzie
+A NAT router with an FTP honeypot using a canarytoken by @spacehuhn and @kodykinzie based on the espcanary library.
 
 <h1>Requirements:</h1>
 
