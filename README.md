@@ -2,20 +2,31 @@
 A NAT router with an FTP honeypot using a canarytoken
 
 Requirements: 
+
 Wi-Fi network with internet to connect the ESP.
+
 Arduino IDE with the following URL added under Preferences -> Additional board manager URL's: http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
 ESP8266 boards added in Arduino IDE by going to Tools -> Boards -> Boards Manager, and install ESP8266 by ESP8266 Community
-SPcanary library installed in Arduino IDE by going to Sketch -> Include Library -> Manage Libraries and installing "ESPcanary" by Dan Hoover
+
+ESPcanary library installed in Arduino IDE by going to Sketch -> Include Library -> Manage Libraries and installing "ESPcanary" by Dan Hoover
+
+
 
 Setup:
+
 
 Git clone or download the ZIP file from this GitHub repo and open the ESP8266_Router_Honeypot.ino sketch in Arduino IDE.
 Replace the variables below with the Wi-Fi network information:
 
 #define STASSID "Your_Wifi_Network_Name" // set the SSID (name) of the Wi-Fi network the ESP8266 will connect to for internet
+
 #define STAPSK  "Your_Wifi_Network_Password" // set the password of the Wi-Fi network the ESP8266 will connect to for internet
+
 #define NEWSSID  "honeypot_Wifi_Name" // set the name (SSID) of the Wi-Fi network the ESP8266 will create
+
 #define NEWPASS  "honeypot_Wifi_Password" // set the password of the Wi-Fi network the ESP8266 will create
+
 
 Next, got to Canarytokens.org and create a "Web bug" token. Copy the URL and paste it in the part of the code below, while setting the username and password for the honeypot FTP server:
 
