@@ -1,7 +1,7 @@
 # ESP8266_Router_Honeypot
 A NAT router with an FTP honeypot using a canarytoken
 
-Requirements: 
+<h1>Requirements:</h1>
 
 Wi-Fi network with internet to connect the ESP.
 
@@ -31,11 +31,15 @@ Replace the variables below with the Wi-Fi network information:
 Next, got to Canarytokens.org and create a "Web bug" token. Copy the URL and paste it in the part of the code below, while setting the username and password for the honeypot FTP server:
 
 String canary = "Your_Canarytoken_URL";  //grab FREE web bug/URL tokens at http://canarytokens.org
+
 String ftp_user = "admin";    //if you replace this with "%" it will accept ANY username
+
 String ftp_pass = "password"; //if you replace this with "%" it will accept ANY password
 
 
-Now, plug in your ESP8266 based device and select the correct board under Tools -> Board. Select the serial port the board is attached to under Tools -> Port. Finally, press the green arrow to flash the software to the board.
+Now, plug in your ESP8266 based device and select the correct board under Tools -> Board. Select the serial port the board is attached to under Tools -> Port.
+
+Finally, press the green arrow to flash the software to the board.
 
 Once it's done, open the serial monitor and set the baud rate to 115200, then press the reset button to watch the board boot. 
                               
