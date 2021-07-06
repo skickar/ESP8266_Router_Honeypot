@@ -7,7 +7,7 @@ A NAT router with an FTP honeypot using a canarytoken
 
 * Arduino IDE with the following URL added under Preferences -> Additional board manager URL's: http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
-* ESP8266 boards added in Arduino IDE by going to Tools -> Boards -> Boards Manager, and install ESP8266 by ESP8266 Community
+* ESP8266 boards added in Arduino IDE by going to Tools -> Boards -> Boards Manager, and installing ESP8266 by ESP8266 Community
 
 * ESPcanary library installed in Arduino IDE by going to Sketch -> Include Library -> Manage Libraries and installing "ESPcanary" by Dan Hoover
 
